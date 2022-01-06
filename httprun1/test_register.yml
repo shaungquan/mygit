@@ -1,0 +1,45 @@
+- config:
+    name: test register API
+    request:
+      base_url: http://49.235.92.12:7005
+    variables:
+      user: keke92
+      user2: keke93
+
+- test:
+    name: 不填写邮箱注册
+    request:
+      url: /api/v1/register
+      method: post
+      json:
+        username: $user
+        password: 123456
+        mail:
+    validate:
+      - eq: [status_code,200]
+      - eq: [content.code,0]
+      - eq: [content.msg,register success!]
+- test:
+    name: 注册用户已存在
+    request:
+      url: /api/v1/register
+      method: post
+      json:
+        username: $user
+        password: 123456
+        mail:
+    validate:
+      - eq: [status_code,200]
+      - eq: [content.code,2000]
+      - eq: [content.msg,$user\u7528\u6237\u5df2\u88ab\u6ce8\u518c]
+- test:
+    name: 填写错误邮箱注册
+    request:
+      url: /api/v1/register
+      method: post
+      json:
+         username: $user2
+         password: 123456
+         mail: 1111111
+    validate:
+      - eq: [status_code,200]

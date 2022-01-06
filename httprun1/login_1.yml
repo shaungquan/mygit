@@ -1,0 +1,83 @@
+- config:
+    name: for test
+    request:
+      base_url: http://49.235.92.12:7005
+    output:
+      - token
+- test:
+    name: login successful
+    request:
+      url: /api/v1/login
+      method: post
+      json:
+        username: test
+        password: 123456
+#        sign:
+#    setup_hooks:
+#      -${sign($request)}
+    validate:
+      - eq: [status_code,200]
+      - eq: [content.msg,login success!]
+    extract:
+      - token: content.token
+- test:
+    name: get userinfo
+    request:
+      method: get
+      url: /api/v1/userinfo
+      headers:
+        Content-Type: application/json
+        Authorization: Token $token
+    validate:
+      - eq: [status_code,200]
+      - eq: [content.code,0]
+      - eq: [content.data.0.id,15]
+#- test: #该账号无修改权限，该用例无法测试
+#    name: modify userinfo
+#    request:
+#      method: post
+#      headers:
+#        Content-Type: application/json
+#        Authorization: Token $token
+#      url: /api/v1/userinfo
+#      json:
+#        name: new_test
+#        sex: M
+#        age: 0
+#        mail: dddddd@163.com
+#    validate:
+#      - eq: [status_code,200]
+#      - eq: [content.code,0]
+#      - eq: [content.message,update some data!]
+#
+- test:
+    name: get card
+    request:
+      method: get
+      url: /card_list_view
+      headers:
+
+
+        Content-Type: application/json
+        Authorization: Token $token
+    validate:
+      - eq: [status_code,200]
+- test:
+    name: modify card id
+    request:
+      url: /card_list_view
+      headers:
+        Content-Type: application/json
+        Authorization: Token $token
+      method: post
+      json:
+        card_id: 9999999
+        card_user: test
+    setup_hooks:
+      - ${setup_output（）}
+    teardown_hooks:
+      - ${teardown_output（）}
+    validate:
+      - eq: [status_code,200]
+      - eq: [content.message,create some data!]
+      - eq: [content.data,{'card_id':9999999,'card_user':'test'}]
