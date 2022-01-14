@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Administrator\PycharmProjects\pytest-test\venv"
+set "VIRTUAL_ENV=C:\Users\Administrator\PycharmProjects\htttprunner\venv"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
