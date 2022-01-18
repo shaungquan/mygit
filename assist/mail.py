@@ -2,13 +2,14 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 import re
-
+import mail_css
 de_from = '测试部门'
 de_to = '测试郭双全'
 de_receivers = '89398664@qq.com'
+html_mag = mail_css.html()
 # 校验邮箱格式
 ex_email = re.compile(r'^[\w][a-zA-Z1-9.]{4,19}@[a-zA-Z0-9]{2,3}.[com|gov|net]')
-def smtp(subject1,body1,From1=de_from,To1=de_to,receive=de_receivers):
+def smtp(subject1,body1=0,From1=de_from,To1=de_to,receive=de_receivers,mailcss=html_mag):
     '''
     :param subject: 主题，必填项
     :param body: 文本内容，必填项
@@ -32,7 +33,7 @@ def smtp(subject1,body1,From1=de_from,To1=de_to,receive=de_receivers):
     result = ex_email.match(receivers)
     if not result:
         return print("邮箱格式有误，请检查后重新输入")
-    message = MIMEText(heand, 'plain', 'utf-8')
+    message = MIMEText(mailcss, 'html', 'utf-8')
     message['From'] = Header(From, 'utf-8')
     message['To'] = Header(To, 'utf-8')
 
@@ -47,7 +48,5 @@ def smtp(subject1,body1,From1=de_from,To1=de_to,receive=de_receivers):
         print("邮件发送成功")
     except smtplib.SMTPException as e:
         print("Error: 无法发送邮件", e)
-
-
 
 
