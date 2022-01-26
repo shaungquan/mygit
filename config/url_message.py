@@ -13,3 +13,8 @@ study_activity_url = 'http://{}.591adb.cn/admin/integrate_activity/addresource'.
 group_url ='http://cms.591adb.cn/admin/integrate_activity/addreadinggroup/app_id/1/id/{}'
 books_data_url = 'http://cms.591adb.cn/admin/integrate_activity/searchresource/app_id/{}/active_id/{}/module_type/3?page=1&limit=1'
 get_id_url = "http://cms.591adb.cn/admin/integrate_activity/index/id/1?page=1&limit=15&filter={}"  # 搜索活动获取活动id
+
+
+cover_path = 'C:/Users/Administrator/PycharmProjects/pytest-test/picture/330186.jpg'
+banner_path = 'C:/Users/Administrator/PycharmProjects/pytest-test/picture/690240.jpg'
+

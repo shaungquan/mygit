@@ -19,7 +19,6 @@ def html():
             <meta charset="utf-8">
             <title>{title}</title>
             <style>
-                .body1 {{background-image:url("C:/Users/Administrator/PycharmProjects/pytest-test/picture/beijin.jpg")}}
                 .table1 td{{text-align:center}}
                 .table1{{min-width:500px;font-size:15px;margin:0 auto;}}
                 .table1 th,.table1 td{{padding:0px 10px 0px 10px;border:1px solid #fff;}}
@@ -58,9 +57,9 @@ def html():
             </table>
         </body>
         """.format(title=title, df_html=df_html, df_html1=df_html1,
-                   daytime=daytime,city=data[0],date=data[1],
-                   tem=data[2],wea=data[3],direct=data[4],
-                   dress_index=data[5],tem_differ=data[6])
+                   daytime=daytime,city=data[0], date=data[1],
+                   tem=data[2], wea=data[3], direct=data[4],
+                   dress_index=data[5], tem_differ=data[6])
     html_msg = "<html>" + head + body + "</html>"
 
     return html_msg

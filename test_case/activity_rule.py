@@ -1,15 +1,14 @@
 import requests
 import json
 import random
-from test_case import urls
-
+from config import  url_message
 def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
 
     # 获取书籍id
     def books_data():
-        url = urls.books_data_url.format(app_id, activity_id)
+        url = url_message.books_data_url.format(app_id, activity_id)
         head = {
-            'cookie': urls.cookie1,
+            'cookie': url_message.cookie1,
             'X-Requested-With': 'XMLHttpRequest'
 
         }
@@ -47,7 +46,7 @@ def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
                 leader_name = unicode(3)
                 leader_identity = unicode(10)
                 recommend_reason = unicode(15)
-            url = urls.study_activity_url
+            url = url_message.study_activity_url
             payload = {'group_switch': group_switch,
                        'recom_switch': recom_switch,
                        'leader_name': leader_name,
@@ -59,14 +58,14 @@ def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
                        'active_id': activity_id}
             headers = {
                 'X-Requested-With': 'XMLHttpRequest',
-                'cookie': urls.cookie1
+                'cookie': url_message.cookie1
             }
 
             response = requests.request("POST", url, headers=headers, data=payload)
             try:
                 datas = json.loads(response.text)
                 if datas['code'] == 1 and datas['msg'] == "保存成功":
-                    print("活动ID为:",activity_id,"规则配置成功")
+                    print("规则配置成功!")
             except Exception as e:
                 print("呀！配置规则失败了，请检查url是否正确", e)
         else:
@@ -75,21 +74,28 @@ def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
     rule()
 
 
-def groups(self, activity_id=138):
-    url = urls.group_url.format(activity_id)
-    group_name = unicode(3)
-
-    headers = {
-        'cookie': urls.cookie1,
-        'X-Requested-With': 'XMLHttpRequest'
-    }
-    payload = {
-        'group_name': group_name
-    }
-    print(url)
-    print(group_name)
-    response = requests.request("POST", url, headers=headers, data=payload)
-    print(response.text)
+def groups(activity_id, num=2):
+    print("正在添加小组……")
+    # print(activity_id)
+    num1 = 0
+    while num1<=num:
+        url = url_message.group_url.format(activity_id)
+        group_name = unicode(3)
+        headers = {
+            'cookie': url_message.cookie1,
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+        payload = {
+            'group_name': group_name
+        }
+        try:
+            response = requests.request("POST", url, headers=headers, data=payload)
+            num1 = num1+1
+        except Exception as e:
+            print("呀！添加小组失败，请检查url是否正确！", e)
+    message = json.loads(response.text)
+    if message['code'] == 1 and message['msg'] == "保存成功":
+        print("已成功添加3小组!")
 
 
 # 随机生成文字
@@ -102,6 +108,6 @@ def unicode(num=1):
         num1 = num1+1
     return str1
 
-groups(unicode(),activity_id=138)
+# groups(activity_id=138)
 
 # study_rule(138)
