@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.header import Header
 import re
-import mail_css
+import weather_css
 de_from = '测试部门'
 de_to = '测试郭双全'
 de_receivers = '89398664@qq.com'
@@ -33,7 +33,7 @@ def smtp(subject1, body1='', From1=de_from, To1=de_to, receive=de_receivers, too
     if not result:
         return print("邮箱格式有误，请检查后重新输入")
     if tool_type == "天气预报":
-        html_mag = mail_css.html()
+        html_mag = weather_css.html()
         message = MIMEText(html_mag, 'html', 'utf-8')
     else:
         message = MIMEText(heand, 'html', 'utf-8')

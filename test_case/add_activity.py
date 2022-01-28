@@ -1,7 +1,7 @@
 import requests
 import datetime
 import json
-from config import url_message
+from config import message
 # cookie可能会变化，需要手动登录获取最新cookie
 
 # 新增活动，并通过搜索获取活动id
@@ -37,11 +37,11 @@ def create_activity(activity_name, activity_type, group_switch='', recom_switch=
 
     # 创建活动
     def create():
-        url = url_message.create_activity_url
+        url = message.create_activity_url
         global start_time1
         start_time1 = time1()
         headers = {
-          'Cookie': url_message.cookie1,
+          'Cookie': message.cookie1,
           'X-Requested-With': 'XMLHttpRequest'
         }
         bodys = {
@@ -73,10 +73,10 @@ def create_activity(activity_name, activity_type, group_switch='', recom_switch=
         # time.sleep(10)
         search_datas = {"activity_name": activity_name, "activity_type": activity_type}
         # 格式化url
-        url = url_message.get_id_url.format(json.dumps(search_datas, ensure_ascii=False))
+        url = message.get_id_url.format(json.dumps(search_datas, ensure_ascii=False))
         payload = {}
         headers = {
-            'Cookie': url_message.cookie1,
+            'Cookie': message.cookie1,
             'X-Requested-With': 'XMLHttpRequest'
         }
 
@@ -119,8 +119,8 @@ def create_activity(activity_name, activity_type, group_switch='', recom_switch=
 def put_cover(get_id2):
     print("正在上传封面…………")
     a = str(get_id2)
-    url = url_message.put_cover_url + a
-    heads = {'cookie': url_message.cookie1,
+    url = message.put_cover_url + a
+    heads = {'cookie': message.cookie1,
              'X-Requested-With': 'XMLHttpRequest'
         }
     type_id = [2, 13]  # 2为爱读宝H5，13为爱读宝小程序
@@ -135,7 +135,7 @@ def put_cover(get_id2):
                     files = [
                         ('image_file', (
                             '330186.jpg',
-                            open(url_message.cover_path, 'rb'),
+                            open(message.cover_path, 'rb'),
                             'image/jpeg'))
                     ]
 
@@ -157,7 +157,7 @@ def put_cover(get_id2):
                     files = [
                         ('image_file', (
                             '690240.jpg',
-                            open(url_message.banner_path, 'rb'),
+                            open(message.banner_path, 'rb'),
                             'image/jpeg'))
                         ]
                     bodys = {

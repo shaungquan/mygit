@@ -2,10 +2,6 @@
 
 import datetime
 from test_case import weather_test
-from email.mime.text import MIMEText
-from email.header import Header
-import smtplib
-from smtplib import SMTP_SSL
 data = weather_test.weather()
 bakdir = "/www/backup/"
 daytime = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime("%Y-%m-%d")

@@ -1,14 +1,16 @@
 import requests
 import json
 import random
-from config import  url_message
+from config import message
+
+
 def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
 
     # 获取书籍id
     def books_data():
-        url = url_message.books_data_url.format(app_id, activity_id)
+        url = message.books_data_url.format(app_id, activity_id)
         head = {
-            'cookie': url_message.cookie1,
+            'cookie': message.cookie1,
             'X-Requested-With': 'XMLHttpRequest'
 
         }
@@ -46,7 +48,7 @@ def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
                 leader_name = unicode(3)
                 leader_identity = unicode(10)
                 recommend_reason = unicode(15)
-            url = url_message.study_activity_url
+            url = message.study_activity_url
             payload = {'group_switch': group_switch,
                        'recom_switch': recom_switch,
                        'leader_name': leader_name,
@@ -58,7 +60,7 @@ def study_rule(activity_id, app_id=1, group_switch='', recom_switch=''):
                        'active_id': activity_id}
             headers = {
                 'X-Requested-With': 'XMLHttpRequest',
-                'cookie': url_message.cookie1
+                'cookie': message.cookie1
             }
 
             response = requests.request("POST", url, headers=headers, data=payload)
@@ -79,10 +81,10 @@ def groups(activity_id, num=2):
     # print(activity_id)
     num1 = 0
     while num1<=num:
-        url = url_message.group_url.format(activity_id)
+        url = message.group_url.format(activity_id)
         group_name = unicode(3)
         headers = {
-            'cookie': url_message.cookie1,
+            'cookie': message.cookie1,
             'X-Requested-With': 'XMLHttpRequest'
         }
         payload = {

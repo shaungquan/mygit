@@ -1,5 +1,7 @@
 import json
 
+
+# 后台地址信息
 # 测试后台
 domain_name = 'cms'
 # 正式后台
@@ -18,3 +20,9 @@ get_id_url = "http://cms.591adb.cn/admin/integrate_activity/index/id/1?page=1&li
 cover_path = 'C:/Users/Administrator/PycharmProjects/pytest-test/picture/330186.jpg'
 banner_path = 'C:/Users/Administrator/PycharmProjects/pytest-test/picture/690240.jpg'
 
+
+# 数据库信息
+user = 'root'
+password = '1029@guo..'
+host = 'localhost'
+database = 'guo_1029'
