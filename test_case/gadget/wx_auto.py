@@ -1,7 +1,7 @@
 import pyautogui
 import time
 import pyperclip
-from test_case import weather_test
+from test_case.gadget import weather_test
 
 
 def openwx():

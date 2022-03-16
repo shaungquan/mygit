@@ -3,18 +3,18 @@ import json
 
 # 后台地址信息
 # 测试后台
-domain_name = 'cms'
+# domain_name = 'cms'
 # 正式后台
-# domain_name = 'wms'
-cookie1 = 'PHPSESSID=o1itubhd9vm8jjf8s5n1iku3m3; acw_tc=2760825616430071196078909ee456115454d3d1bba49050a4009a00a03908'
-create_activity_url = 'http://{}.591adb.cn/admin/integrate_activity/add/app_id/1'.format(domain_name)  # 创建活动接口
-put_cover_url = 'http://{}.591adb.cn/admin/integrate_activity/upimage/app_id/1/id/'.format(domain_name)  # 上传封面
-study_activity_url = 'http://{}.591adb.cn/admin/integrate_activity/addresource'.format(domain_name)     #配置共读活动规则
+domain_name = 'wms'
+cookie1 = 'PHPSESSID=gjg1r6o1lopfm564fj0b3q0s90; acw_tc=2760823b16450787547277466e53a7087b60821c89ce0672fbfb6fa03e6603'
+create_activity_url = 'https://{}.591adb.cn/admin/integrate_activity/add/app_id/1'.format(domain_name)  # 创建活动接口
+put_cover_url = 'https://{}.591adb.cn/admin/integrate_activity/upimage/app_id/1/id/'.format(domain_name)  # 上传封面
+study_activity_url = 'https://{}.591adb.cn/admin/integrate_activity/addresource'.format(domain_name)     #配置共读活动规则
 
 # 需要单独修改域名的url
-group_url ='http://cms.591adb.cn/admin/integrate_activity/addreadinggroup/app_id/1/id/{}'
-books_data_url = 'http://cms.591adb.cn/admin/integrate_activity/searchresource/app_id/{}/active_id/{}/module_type/3?page=1&limit=1'
-get_id_url = "http://cms.591adb.cn/admin/integrate_activity/index/id/1?page=1&limit=15&filter={}"  # 搜索活动获取活动id
+group_url ='https://wms.591adb.cn/admin/integrate_activity/addreadinggroup/app_id/1/id/{}'
+books_data_url = 'https://wms.591adb.cn/admin/integrate_activity/searchresource/app_id/{}/active_id/{}/module_type/3?page=1&limit=1'
+get_id_url = "https://wms.591adb.cn/admin/integrate_activity/index/id/1?page=1&limit=15&filter={}"  # 搜索活动获取活动id
 
 
 cover_path = 'C:/Users/Administrator/PycharmProjects/pytest-test/picture/330186.jpg'

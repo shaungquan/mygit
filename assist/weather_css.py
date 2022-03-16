@@ -1,7 +1,7 @@
 
 
 import datetime
-from test_case import weather_test
+from test_case.gadget import weather_test
 data = weather_test.weather()
 bakdir = "/www/backup/"
 daytime = (datetime.datetime.now() + datetime.timedelta(days=0)).strftime("%Y-%m-%d")

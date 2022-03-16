@@ -3,6 +3,8 @@ from email.mime.text import MIMEText
 from email.header import Header
 import re
 import weather_css
+import mysql
+mysql1 = mysql.Database
 de_from = '测试部门'
 de_to = '测试郭双全'
 de_receivers = '89398664@qq.com'
@@ -49,7 +51,10 @@ def smtp(subject1, body1='', From1=de_from, To1=de_to, receive=de_receivers, too
         smtpObj.connect(mail_host, 25)  # 25 为 SMTP 端口号
         smtpObj.login(mail_user, mail_pass)
         smtpObj.sendmail(sender, receivers, message.as_string())
-        print("邮件发送成功")
+        log = "邮件发送成功"
+        print(log)
+        logs = "INSERT INTO `logs` (log_name,log_time) VALUES('{}',NOW())".format(log)
+        mysql1().install(logs)
     except smtplib.SMTPException as e:
         print("Error: 无法发送邮件", e)
 

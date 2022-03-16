@@ -68,7 +68,8 @@ class Database:
         else:
             return
 
-
+# name1 = "测试"
 # a = Database()
-# print(a)
+# b = "INSERT INTO `logs` (log_name,log_time) VALUES('{}',NOW())".format(name1)
+# a.install(b)
 # a.update("UPDATE `guo_1029`.`course` SET `CId` = '01', `Cname` = '大傻子', `TId` = '02' WHERE `CId` = '01' AND `Cname` = '语文' AND `TId` = '02' LIMIT 1;")
