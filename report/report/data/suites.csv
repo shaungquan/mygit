@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Mar 25 17:40:41 CST 2022","Fri Mar 25 17:40:41 CST 2022","221","test_case.test_port","test_sample","TestCreateActivity","","","test_activity_name_long[不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊-6-start_time0-end_time0-查询成功-活动名称不能超过30个字符]","活动名称过长是否能创建"
+"passed","Fri Mar 25 17:40:40 CST 2022","Fri Mar 25 17:40:41 CST 2022","391","test_case.test_port","test_sample","TestCreateActivity","","","test_activity_name_null[-活动名称不能为空]","活动名称为空是否能创建"
+"passed","Fri Mar 25 17:40:40 CST 2022","Fri Mar 25 17:40:40 CST 2022","5","test_case.test_port","test_sample","","","","testdata",""
+"passed","Fri Mar 25 17:40:41 CST 2022","Fri Mar 25 17:40:41 CST 2022","215","test_case.test_port","test_sample","TestCreateActivity","","","test_time_null[活动名称-6--活动开始时间不能为空]","开始时间为空是否能创建"

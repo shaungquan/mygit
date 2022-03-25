@@ -1,0 +1,70 @@
+{
+  "uid" : "c3eae452d0b6b9a2",
+  "name" : "test_time_null[活动名称-6--活动开始时间不能为空]",
+  "fullName" : "test_case.test_port.test_sample.TestCreateActivity#test_time_null",
+  "historyId" : "df3c78f8816ace9d3448412e85e5a0be",
+  "time" : {
+    "start" : 1648201241300,
+    "stop" : 1648201241515,
+    "duration" : 215
+  },
+  "description" : "开始时间为空是否能创建",
+  "descriptionHtml" : "<p>开始时间为空是否能创建</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case.test_port"
+  }, {
+    "name" : "suite",
+    "value" : "test_sample"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateActivity"
+  }, {
+    "name" : "host",
+    "value" : "PC-201703221222"
+  }, {
+    "name" : "thread",
+    "value" : "17240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_port.test_sample"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "activity_name",
+    "value" : "'活动名称'"
+  }, {
+    "name" : "activity_type",
+    "value" : "'6'"
+  }, {
+    "name" : "expect",
+    "value" : "'活动开始时间不能为空'"
+  }, {
+    "name" : "start_time",
+    "value" : "''"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c3eae452d0b6b9a2.json",
+  "parameterValues" : [ "'活动名称'", "'6'", "'活动开始时间不能为空'", "''" ]
+}

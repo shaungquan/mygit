@@ -4,10 +4,16 @@ from email.header import Header
 import re
 import weather_css
 import mysql
+import socket
 mysql1 = mysql.Database
 de_from = '测试部门'
 de_to = '测试郭双全'
 de_receivers = '89398664@qq.com'
+
+#获取本机电脑名
+myname = socket.getfqdn(socket.gethostname(  ))
+#获取本机ip
+myaddr = socket.gethostbyname(myname)
 # 校验邮箱格式
 ex_email = re.compile(r'^[\w][a-zA-Z1-9.]{4,19}@[a-zA-Z0-9]{2,3}.[com|gov|net]')
 def smtp(subject1, body1='', From1=de_from, To1=de_to, receive=de_receivers, tool_type=''):
@@ -53,7 +59,7 @@ def smtp(subject1, body1='', From1=de_from, To1=de_to, receive=de_receivers, too
         smtpObj.sendmail(sender, receivers, message.as_string())
         log = "邮件发送成功"
         print(log)
-        logs = "INSERT INTO `logs` (log_name,log_time) VALUES('{}',NOW())".format(log)
+        logs = "INSERT INTO `logs` (log_name,log_time,ip) VALUES('{}',NOW(),'{}')".format(log, myaddr)
         mysql1().install(logs)
     except smtplib.SMTPException as e:
         print("Error: 无法发送邮件", e)

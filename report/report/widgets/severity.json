@@ -1,0 +1,41 @@
+[ {
+  "uid" : "d6c5b9256b7d52ad",
+  "name" : "testdata",
+  "time" : {
+    "start" : 1648201240663,
+    "stop" : 1648201240668,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c3eae452d0b6b9a2",
+  "name" : "test_time_null[活动名称-6--活动开始时间不能为空]",
+  "time" : {
+    "start" : 1648201241300,
+    "stop" : 1648201241515,
+    "duration" : 215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "91a51b358c43094a",
+  "name" : "test_activity_name_long[不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊-6-start_time0-end_time0-查询成功-活动名称不能超过30个字符]",
+  "time" : {
+    "start" : 1648201241070,
+    "stop" : 1648201241291,
+    "duration" : 221
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe3558e8296142c6",
+  "name" : "test_activity_name_null[-活动名称不能为空]",
+  "time" : {
+    "start" : 1648201240672,
+    "stop" : 1648201241063,
+    "duration" : 391
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

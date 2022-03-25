@@ -1,0 +1,65 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "PC-201703221222",
+    "children" : [ {
+      "name" : "17240-MainThread",
+      "children" : [ {
+        "name" : "testdata",
+        "uid" : "d6c5b9256b7d52ad",
+        "parentUid" : "e64b43605d107f2e7298aebac94e57dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648201240663,
+          "stop" : 1648201240668,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_activity_name_null[-活动名称不能为空]",
+        "uid" : "fe3558e8296142c6",
+        "parentUid" : "e64b43605d107f2e7298aebac94e57dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648201240672,
+          "stop" : 1648201241063,
+          "duration" : 391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'活动名称不能为空'" ]
+      }, {
+        "name" : "test_time_null[活动名称-6--活动开始时间不能为空]",
+        "uid" : "c3eae452d0b6b9a2",
+        "parentUid" : "e64b43605d107f2e7298aebac94e57dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648201241300,
+          "stop" : 1648201241515,
+          "duration" : 215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'活动名称'", "'6'", "'活动开始时间不能为空'", "''" ]
+      }, {
+        "name" : "test_activity_name_long[不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊-6-start_time0-end_time0-查询成功-活动名称不能超过30个字符]",
+        "uid" : "91a51b358c43094a",
+        "parentUid" : "e64b43605d107f2e7298aebac94e57dc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1648201241070,
+          "stop" : 1648201241291,
+          "duration" : 221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'查询成功'", "'不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊'", "6", "datetime.datetime(2022, 3, 30, 0, 0)", "'活动名称不能超过30个字符'", "datetime.datetime(2022, 3, 30, 0, 0)" ]
+      } ],
+      "uid" : "e64b43605d107f2e7298aebac94e57dc"
+    } ],
+    "uid" : "e1728cf7fcc8731fd259b9d19c2fc469"
+  } ]
+}
