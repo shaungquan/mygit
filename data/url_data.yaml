@@ -1,0 +1,27 @@
+cookie:
+  'PHPSESSID=ir4r75dk67kdtup5n80m6i4590'
+# 创建活动
+add_activity:
+  'http://cms.591adb.cn/admin/integrate_activity/add/app_id/1'
+# 活动规则
+activity_rule:
+  'http://cms.591adb.cn/admin/integrate_activity/addresource'
+#搜索活动共读活动
+search_activity:
+  'http://cms.591adb.cn/admin/integrate_activity/index/id/1?page=1&limit=999&filter={}'
+#获取未配置的的书籍
+get_book_data:
+  'http://cms.591adb.cn/admin/integrate_activity/searchresource/app_id/1/active_id/1/module_type/3?page=1&limit=10&keyword='
+
+# 上传封面和banner地址
+put_cover:
+  'http://cms.591adb.cn/admin/integrate_activity/upimage/app_id/1/id/'
+# 封面路径
+cover_path:
+  'C:/Users/Administrator/PycharmProjects/pytest-test/picture/330186.jpg'
+# banner路径
+banner_path:
+  'C:/Users/Administrator/PycharmProjects/pytest-test/picture/690240.jpg'
+#共读活动规则
+read_rule:
+  'http://cms.591adb.cn/admin/integrate_activity/addresource'

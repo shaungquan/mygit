@@ -1,5 +1,5 @@
 {
-  "ab59972e7f72739e809cd31725728fbe" : {
+  "2db4eb202a21f5f26acc85b2be2a6226" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,16 +9,16 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "fe3558e8296142c6",
+      "uid" : "1546f6fa77faada5",
       "status" : "passed",
       "time" : {
-        "start" : 1648201240672,
-        "stop" : 1648201241063,
-        "duration" : 391
+        "start" : 1652947134577,
+        "stop" : 1652947134774,
+        "duration" : 197
       }
     } ]
   },
-  "df3c78f8816ace9d3448412e85e5a0be" : {
+  "1e1aadad2d4ee287ca438b5fd008a683" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -28,35 +28,36 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c3eae452d0b6b9a2",
+      "uid" : "1db59268a40268dc",
       "status" : "passed",
       "time" : {
-        "start" : 1648201241300,
-        "stop" : 1648201241515,
-        "duration" : 215
+        "start" : 1652947134380,
+        "stop" : 1652947134569,
+        "duration" : 189
       }
     } ]
   },
-  "3a276eb664120fd9c49680375678f2f9" : {
+  "30abad4994ecbdf7396f90268bdafe3d" : {
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "91a51b358c43094a",
-      "status" : "passed",
+      "uid" : "a4bc367deb0afa06",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert '缺少参数' in '团长名称不能超过20个字符'",
       "time" : {
-        "start" : 1648201241070,
-        "stop" : 1648201241291,
-        "duration" : 221
+        "start" : 1652947136567,
+        "stop" : 1652947136770,
+        "duration" : 203
       }
     } ]
   },
-  "507b526228be0d1c908311b1b22faf7a" : {
+  "39ca63fc456ac86bf85c69ba0f32d2e3" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -66,12 +67,89 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d6c5b9256b7d52ad",
+      "uid" : "f90984f683f78b97",
       "status" : "passed",
       "time" : {
-        "start" : 1648201240663,
-        "stop" : 1648201240668,
-        "duration" : 5
+        "start" : 1652947136070,
+        "stop" : 1652947136258,
+        "duration" : 188
+      }
+    } ]
+  },
+  "872abf8eeeebf63b9ad883bff1421738" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6d5069b92832f06f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947134989,
+        "stop" : 1652947135180,
+        "duration" : 191
+      }
+    } ]
+  },
+  "9cf05a9b40d22bae9f46a0d93694ba3e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7d6929ec2ad3b068",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947134785,
+        "stop" : 1652947134975,
+        "duration" : 190
+      }
+    } ]
+  },
+  "ef4f5b1700620ac676bcbcd73f9f6b5d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bbd9d7cbee75d677",
+      "status" : "skipped",
+      "statusDetails" : "Skipped: 活动数据太多，暂时跳过此用例",
+      "time" : {
+        "start" : 1652947134984,
+        "stop" : 1652947134984,
+        "duration" : 0
+      }
+    } ]
+  },
+  "6f44bffcf894c5a674a69f1fe05bb2f3" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ad87fed6f29bd64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947135572,
+        "stop" : 1652947135767,
+        "duration" : 195
       }
     } ]
   }

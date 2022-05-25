@@ -1,0 +1,81 @@
+{
+  "uid" : "bbd9d7cbee75d677",
+  "name" : "正常创建活动",
+  "fullName" : "test_case.test_port.test_activity.TestCreateActivity#test_activity_succeed",
+  "historyId" : "ef4f5b1700620ac676bcbcd73f9f6b5d",
+  "time" : {
+    "start" : 1652947134984,
+    "stop" : 1652947134984,
+    "duration" : 0
+  },
+  "description" : "正常创建活动",
+  "descriptionHtml" : "<p>正常创建活动</p>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: 活动数据太多，暂时跳过此用例",
+  "statusTrace" : "('C:\\\\Users\\\\Administrator\\\\PycharmProjects\\\\pytest-test\\\\test_case\\\\test_port\\\\test_activity.py', 44, 'Skipped: 活动数据太多，暂时跳过此用例')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip('活动数据太多，暂时跳过此用例')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case.test_port"
+  }, {
+    "name" : "suite",
+    "value" : "test_activity"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateActivity"
+  }, {
+    "name" : "host",
+    "value" : "PC-201703221222"
+  }, {
+    "name" : "thread",
+    "value" : "13288-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_port.test_activity"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "activity_content",
+    "value" : "'活动描述'"
+  }, {
+    "name" : "activity_name",
+    "value" : "'活动名称'"
+  }, {
+    "name" : "activity_type",
+    "value" : "'6'"
+  }, {
+    "name" : "end_time",
+    "value" : "7"
+  }, {
+    "name" : "expect",
+    "value" : "'保存成功'"
+  }, {
+    "name" : "start_time",
+    "value" : "20"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.skip('活动数据太多，暂时跳过此用例')" ]
+  },
+  "source" : "bbd9d7cbee75d677.json",
+  "parameterValues" : [ "'活动描述'", "'活动名称'", "'6'", "7", "'保存成功'", "20" ]
+}

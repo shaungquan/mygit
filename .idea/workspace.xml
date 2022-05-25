@@ -5,15 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4d2b499-87f8-40f7-a4a2-9ca7c4afe709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/YamlParse.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/activity.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/test_port/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/test_port/premise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_case/test_port/test_sample.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/get_setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/setting.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/url_data.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_case/test_port/test_activity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/ac_rule.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/config/get_url_setting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/config/url_setting.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/activity/create_activity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/event.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/home.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assist/mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/assist/mail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assist/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/assist/mysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/message.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/message.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/activity.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/activity.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/behaviors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/categories.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/packages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/suites.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/test-cases/91a51b358c43094a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/test-cases/c3eae452d0b6b9a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/test-cases/d6c5b9256b7d52ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/test-cases/fe3558e8296142c6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/data/timeline.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/export/influxDbData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/export/prometheusData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/history/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/history/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/history/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/history/history.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/history/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/behaviors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/categories-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/categories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/duration-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/duration.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/history-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/retry-trend.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/severity.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/status-chart.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/suites.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/report/widgets/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/1d38cbd4-5c43-4ff3-bda8-7c7600fa8e52-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/4b24e86f-a13d-48c8-96b2-7b2602cc77a2-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/529c55a9-215a-4ac4-86f9-beeb84dbe685-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/59853bca-23da-498a-9160-ab90cdb5eea5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/6b779990-ae11-459b-a8ec-90c6b80d6457-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/70e02522-ced6-4ad3-8073-16f890763d89-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/720051db-cb7d-495e-96d5-81d42eae56e3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/75e2b59a-7757-4360-a005-58c0c70b1a57-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/798226c6-2ba8-4f37-899a-7163277faab5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/8fe50137-5dff-4501-b4f7-6ac4ad676820-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/95b04a02-51a6-45eb-8c7b-b8059e9d4ff5-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/9e22cfc1-77c0-42e8-b104-b54224c07c8d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/a666bd85-d1b3-4d4b-b8b4-d912e1f9b426-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/d116cd2a-a69b-431d-9c44-09f89bdedbeb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/ef81852d-ae50-4e05-b2fe-b13285d1616b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/tmp/f23920f2-ddee-4102-925c-89e59c882f9c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/B2B/add_activity.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/B2B/add_activity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/test_port/premise.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_port/premise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/test_port/test_sample.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,46 +82,51 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/pytest_test$em.coverage" NAME="em Coverage Results" MODIFIED="1642062648457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
     <SUITE FILE_PATH="coverage/pytest_test$mail.coverage" NAME="mail Coverage Results" MODIFIED="1643185371448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
-    <SUITE FILE_PATH="coverage/pytest_test$emtest.coverage" NAME="emtest Coverage Results" MODIFIED="1642062758533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
-    <SUITE FILE_PATH="coverage/pytest_test$activity_rule.coverage" NAME="activity_rule Coverage Results" MODIFIED="1643179852063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/pytest_test$add_activity.coverage" NAME="add_activity Coverage Results" MODIFIED="1645080018363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/pytest_test$mail_css.coverage" NAME="mail_css Coverage Results" MODIFIED="1642488986873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
-    <SUITE FILE_PATH="coverage/pytest_test$test_sample__1_.coverage" NAME="test_sample (1) Coverage Results" MODIFIED="1648109301629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port/temp" />
-    <SUITE FILE_PATH="coverage/pytest_test$urls.coverage" NAME="urls Coverage Results" MODIFIED="1643096933235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pytest_test$test_activity.coverage" NAME="test_activity Coverage Results" MODIFIED="1652947131416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port" />
     <SUITE FILE_PATH="coverage/pytest_test$email.coverage" NAME="email Coverage Results" MODIFIED="1642064460261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
     <SUITE FILE_PATH="coverage/pytest_test$emtest__1_.coverage" NAME="emtest (1) Coverage Results" MODIFIED="1642413810462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
-    <SUITE FILE_PATH="coverage/pytest_test$YamlParse.coverage" NAME="YamlParse Coverage Results" MODIFIED="1648086970377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
-    <SUITE FILE_PATH="coverage/pytest_test$weather_test.coverage" NAME="weather_test Coverage Results" MODIFIED="1642493694345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/pytest_test$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1648002554757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pytest_test$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1647399574460" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
     <SUITE FILE_PATH="coverage/pytest_test$E_mail.coverage" NAME="E-mail Coverage Results" MODIFIED="1642062057802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
     <SUITE FILE_PATH="coverage/pytest_test$wx_auto.coverage" NAME="wx_auto Coverage Results" MODIFIED="1643270901068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/pytest_test$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1646641014489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
-    <SUITE FILE_PATH="coverage/pytest_test$premise.coverage" NAME="premise Coverage Results" MODIFIED="1648171464262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port/temp" />
-    <SUITE FILE_PATH="coverage/pytest_test$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1648201239645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port" />
+    <SUITE FILE_PATH="coverage/pytest_test$mysql.coverage" NAME="mysql Coverage Results" MODIFIED="1651734680643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
+    <SUITE FILE_PATH="coverage/pytest_test$test_sample.coverage" NAME="test_sample Coverage Results" MODIFIED="1649215580388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port" />
+    <SUITE FILE_PATH="coverage/pytest_test$get_url_setting.coverage" NAME="get_url_setting Coverage Results" MODIFIED="1651827688384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool/activity/config" />
+    <SUITE FILE_PATH="coverage/pytest_test$ac_rule.coverage" NAME="ac_rule Coverage Results" MODIFIED="1651828192580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool/activity" />
     <SUITE FILE_PATH="coverage/pytest_test$premise__1_.coverage" NAME="premise (1) Coverage Results" MODIFIED="1648172406997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port" />
+    <SUITE FILE_PATH="coverage/pytest_test$test.coverage" NAME="test Coverage Results" MODIFIED="1652859001581" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytest_test$home.coverage" NAME="home Coverage Results" MODIFIED="1652172382139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/pytest_test$emtest.coverage" NAME="emtest Coverage Results" MODIFIED="1642062758533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/assist" />
+    <SUITE FILE_PATH="coverage/pytest_test$create_activity.coverage" NAME="create_activity Coverage Results" MODIFIED="1652088096875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool/activity" />
+    <SUITE FILE_PATH="coverage/pytest_test$activity_rule.coverage" NAME="activity_rule Coverage Results" MODIFIED="1643179852063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pytest_test$test_sample__1_.coverage" NAME="test_sample (1) Coverage Results" MODIFIED="1648109301629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port/temp" />
+    <SUITE FILE_PATH="coverage/pytest_test$urls.coverage" NAME="urls Coverage Results" MODIFIED="1643096933235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pytest_test$YamlParse.coverage" NAME="YamlParse Coverage Results" MODIFIED="1648086970377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/pytest_test$weather_test.coverage" NAME="weather_test Coverage Results" MODIFIED="1642493694345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
+    <SUITE FILE_PATH="coverage/pytest_test$conftest.coverage" NAME="conftest Coverage Results" MODIFIED="1648002554757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pytest_test$premise.coverage" NAME="premise Coverage Results" MODIFIED="1652946524313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/test_port" />
     <SUITE FILE_PATH="coverage/pytest_test$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1643008424594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
-    <SUITE FILE_PATH="coverage/pytest_test$test.coverage" NAME="test Coverage Results" MODIFIED="1647935504318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test_case/test_port/test_sample.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/url_data.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="26">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/activity.yaml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case/test_port/test_activity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="15" selection-start-line="17" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="495">
+              <caret line="113" column="26" lean-forward="true" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +134,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/test_port/premise.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="496">
+              <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -81,42 +144,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/YamlParse.py">
+        <entry file="file://$PROJECT_DIR$/config/get_setting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/message.py">
+        <entry file="file://$PROJECT_DIR$/data/activity.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="226">
+              <caret line="32" column="16" selection-start-line="32" selection-end-line="32" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assist/mail.py">
+        <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="130">
+              <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="56" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assist/mysql.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1898">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,6 +186,8 @@
     <findStrings>
       <find>dir</find>
       <find>rule</find>
+      <find>for</find>
+      <find>format</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,31 +210,46 @@
         <option value="$PROJECT_DIR$/assist/mail_css.py" />
         <option value="$PROJECT_DIR$/test_case/wx_auto.py" />
         <option value="$PROJECT_DIR$/test_case/activity_rule.py" />
-        <option value="$PROJECT_DIR$/config/message.py" />
         <option value="D:/vip.py" />
         <option value="$PROJECT_DIR$/assist/__init__.py" />
-        <option value="$PROJECT_DIR$/assist/mysql.py" />
         <option value="$PROJECT_DIR$/assist/weather_css.py" />
         <option value="$PROJECT_DIR$/test_case/gadget/wx_auto.py" />
         <option value="$PROJECT_DIR$/assist/mail.py" />
         <option value="$PROJECT_DIR$/data/activity.yml" />
         <option value="$PROJECT_DIR$/api_data.py" />
         <option value="$PROJECT_DIR$/conftest.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/data/activity.yaml" />
         <option value="$PROJECT_DIR$/test_case/test_port/temp/test_sample.py" />
         <option value="$PROJECT_DIR$/config/YamlParse.py" />
         <option value="$PROJECT_DIR$/test_case/test_port/temp/premise.py" />
-        <option value="$PROJECT_DIR$/test_case/test_port/premise.py" />
+        <option value="$PROJECT_DIR$/test_case/B2B/add_activity.py" />
         <option value="$PROJECT_DIR$/test_case/test_port/test_sample.py" />
+        <option value="$PROJECT_DIR$/test_case/test_port/test_add_activity.py" />
+        <option value="$PROJECT_DIR$/config/setting.ini" />
+        <option value="$PROJECT_DIR$/test1.py" />
+        <option value="$PROJECT_DIR$/assist/mysql.py" />
+        <option value="$PROJECT_DIR$/tool/activity/rule.py" />
+        <option value="$PROJECT_DIR$/tool/activity/config.py" />
+        <option value="$PROJECT_DIR$/config/get_setting.py" />
+        <option value="$PROJECT_DIR$/config/message.py" />
+        <option value="$PROJECT_DIR$/tool/activity/config/get_url_setting.py" />
+        <option value="$PROJECT_DIR$/tool/event.py" />
+        <option value="$PROJECT_DIR$/tool/activity/config/url_setting.ini" />
+        <option value="$PROJECT_DIR$/tool/activity/create_activity.py" />
+        <option value="$PROJECT_DIR$/tool/home.py" />
+        <option value="$PROJECT_DIR$/tool/activity/ac_rule.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/data/activity.yaml" />
+        <option value="$PROJECT_DIR$/data/url_data.yaml" />
+        <option value="$PROJECT_DIR$/test_case/test_port/premise.py" />
+        <option value="$PROJECT_DIR$/test_case/test_port/test_activity.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="383" />
-    <option name="y" value="422" />
-    <option name="width" value="1497" />
-    <option name="height" value="961" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="235" />
+    <option name="y" value="155" />
+    <option name="width" value="1488" />
+    <option name="height" value="928" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -189,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,29 +267,24 @@
             <path>
               <item name="pytest-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="pytest-test" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pytest-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pytest-test" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pytest-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pytest-test" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pytest-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="pytest-test" type="462c0819:PsiDirectoryNode" />
               <item name="test_case" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pytest-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytest-test" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="test_port" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,15 +295,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\picture" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\test_case\test_port" />
       <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\test_case\test_port\temp" />
       <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\config" />
       <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\test_case\gadget" />
       <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\test_case\B2B" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\PycharmProjects\pytest-test\picture" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -256,20 +318,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
-    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pytest-test/report/report/index.html">
+  <component name="RunManager" selected="Python.test_activity">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pytest-test/report/report/index.html">
       <method v="2" />
     </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pytest-test/test_case/test_port/report/html/index.html">
+    <configuration name="home" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytest-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tool/home.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="index.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pytest-test/test_case/report/report/index.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/pytest-test/test_case/test_port/report/index.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="test_sample" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="premise" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pytest-test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,7 +357,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_port/test_sample.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_port/premise.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytest-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_activity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pytest-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/test_port" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_case/test_port/test_activity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -293,11 +412,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html (1)" />
-        <item itemvalue="Python.test_sample" />
-        <item itemvalue="JavaScript Debug.index.html (3)" />
-        <item itemvalue="JavaScript Debug.index.html (2)" />
+        <item itemvalue="Python.test_activity" />
+        <item itemvalue="Python.premise" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.home" />
       </list>
     </recent_temporary>
   </component>
@@ -350,12 +469,31 @@
       <workItem from="1648084670304" duration="9672000" />
       <workItem from="1648106882719" duration="3110000" />
       <workItem from="1648171330478" duration="2700000" />
-      <workItem from="1648196837643" duration="4425000" />
+      <workItem from="1648196837643" duration="4827000" />
+      <workItem from="1648446559835" duration="3992000" />
+      <workItem from="1649212621452" duration="15451000" />
+      <workItem from="1649295023446" duration="6381000" />
+      <workItem from="1650253382334" duration="10256000" />
+      <workItem from="1650438715502" duration="5306000" />
+      <workItem from="1650446757647" duration="825000" />
+      <workItem from="1650954254061" duration="7273000" />
+      <workItem from="1651194947046" duration="1328000" />
+      <workItem from="1651733493553" duration="2899000" />
+      <workItem from="1651801301416" duration="19955000" />
+      <workItem from="1651886648094" duration="21968000" />
+      <workItem from="1652058942980" duration="19488000" />
+      <workItem from="1652144948450" duration="16583000" />
+      <workItem from="1652337119587" duration="3094000" />
+      <workItem from="1652411337947" duration="5860000" />
+      <workItem from="1652683360748" duration="7610000" />
+      <workItem from="1652754701327" duration="9812000" />
+      <workItem from="1652854546950" duration="11024000" />
+      <workItem from="1652925075861" duration="9358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198710000" />
+    <option name="totallyTimeSpent" value="377575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -363,11 +501,11 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.17217484" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18710022" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.47494033" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3163597" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.44518715" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23943663" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -375,7 +513,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27843988" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27705628" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -384,17 +522,35 @@
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18710022" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.44518715" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27843988" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39761648" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.27705628" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assist/emtest.py" />
-    <entry file="file://$PROJECT_DIR$/picture/beijin.jpg" />
-    <entry file="file://$PROJECT_DIR$/test_case/111.jpg" />
-    <entry file="file://$PROJECT_DIR$/test_case/11.jpg" />
-    <entry file="file://$PROJECT_DIR$/test_case/1111.jpg" />
-    <entry file="file://$PROJECT_DIR$/test_case/11111.jpg" />
     <entry file="file://$PROJECT_DIR$/test_case/test.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/requests/api.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,13 +591,6 @@
     <entry file="file://$PROJECT_DIR$/test_case/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/urllib3/connectionpool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="600" selection-start-line="600" selection-end-line="600" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/vip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -449,53 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/gadget/wx_auto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/B2B/add_activity.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assist/weather_css.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/gadget/weather_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_port/report/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_port/report/index.html" />
     <entry file="file://$PROJECT_DIR$/test_case/test_port/temp/8cb32641-4b6f-4d07-ac3f-f8fcda035d11-result.json" />
     <entry file="file://$PROJECT_DIR$/data.yaml" />
     <entry file="file://$PROJECT_DIR$/assist/__init__.py">
@@ -515,78 +618,251 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/B2B/activity_rule.py">
+    <entry file="file://$PROJECT_DIR$/api_data.py" />
+    <entry file="file://$PROJECT_DIR$/test_case/test_port/report/0f91e2d1-b061-432b-ae73-913dc5335ef4-container.json" />
+    <entry file="file://$PROJECT_DIR$/report/report/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        <state relative-caret-position="-7878" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/gadget/wx_auto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/gadget/weather_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/allure_commons/_allure.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.py" />
+    <entry file="file://$PROJECT_DIR$/assist/weather_css.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#2#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_port/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assist/mail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/urllib3/connectionpool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="600" selection-start-line="600" selection-end-line="600" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="645" column="43" lean-forward="true" selection-start-line="645" selection-start-column="43" selection-end-line="645" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/activity/data.yaml" />
+    <entry file="file://$PROJECT_DIR$/tool/activity/config.py" />
+    <entry file="file://$PROJECT_DIR$/tool/activity/config/setting" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="1232" selection-start-line="1232" selection-end-line="1232" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/event.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="466" column="8" selection-start-line="466" selection-start-column="8" selection-end-line="466" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assist/mysql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/activity/ac_rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api_data.py" />
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_port/report/0f91e2d1-b061-432b-ae73-913dc5335ef4-container.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/message.py">
+    <entry file="file://$PROJECT_DIR$/tool/home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assist/mail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="208">
+          <caret line="107" column="22" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assist/mysql.py">
+    <entry file="file://$PROJECT_DIR$/tool/activity/config/get_url_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1898">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="234">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/YamlParse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="416">
+          <caret line="16" selection-start-line="16" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_port/premise.py">
+    <entry file="file://$PROJECT_DIR$/tool/activity/create_activity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="5252">
+          <caret line="202" column="43" selection-start-line="202" selection-start-column="43" selection-end-line="202" selection-end-column="43" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/activity/config/url_setting.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/setting.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/B2B/activity_rule.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="82" column="20" lean-forward="true" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/B2B/add_activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2028">
+          <caret line="78" column="19" lean-forward="true" selection-start-line="78" selection-start-column="19" selection-end-line="78" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/activity.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="15" selection-start-line="17" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="226">
+          <caret line="32" column="16" selection-start-line="32" selection-end-line="32" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_port/test_sample.py">
+    <entry file="file://$PROJECT_DIR$/config/get_setting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/url_data.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_port/premise.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="213" column="8" selection-start-line="213" selection-start-column="8" selection-end-line="213" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_port/test_activity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="113" column="26" lean-forward="true" selection-start-line="113" selection-start-column="26" selection-end-line="113" selection-end-column="26" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

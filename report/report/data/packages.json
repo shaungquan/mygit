@@ -2,60 +2,112 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "test_case.test_port.test_sample",
+    "name" : "test_case.test_port.test_activity",
     "children" : [ {
-      "name" : "testdata",
-      "uid" : "d6c5b9256b7d52ad",
-      "parentUid" : "bd87080b96d9b67d4e8cf8b44fa37152",
+      "name" : "活动名称为空",
+      "uid" : "1db59268a40268dc",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
       "status" : "passed",
       "time" : {
-        "start" : 1648201240663,
-        "stop" : 1648201240668,
-        "duration" : 5
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_activity_name_null[-活动名称不能为空]",
-      "uid" : "fe3558e8296142c6",
-      "parentUid" : "bd87080b96d9b67d4e8cf8b44fa37152",
-      "status" : "passed",
-      "time" : {
-        "start" : 1648201240672,
-        "stop" : 1648201241063,
-        "duration" : 391
+        "start" : 1652947134380,
+        "stop" : 1652947134569,
+        "duration" : 189
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "''", "'活动名称不能为空'" ]
     }, {
-      "name" : "test_activity_name_long[不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊-6-start_time0-end_time0-查询成功-活动名称不能超过30个字符]",
-      "uid" : "91a51b358c43094a",
-      "parentUid" : "bd87080b96d9b67d4e8cf8b44fa37152",
+      "name" : "活动名称过长",
+      "uid" : "1546f6fa77faada5",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
       "status" : "passed",
       "time" : {
-        "start" : 1648201241070,
-        "stop" : 1648201241291,
-        "duration" : 221
+        "start" : 1652947134577,
+        "stop" : 1652947134774,
+        "duration" : 197
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'查询成功'", "'不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊'", "6", "datetime.datetime(2022, 3, 30, 0, 0)", "'活动名称不能超过30个字符'", "datetime.datetime(2022, 3, 30, 0, 0)" ]
     }, {
-      "name" : "test_time_null[活动名称-6--活动开始时间不能为空]",
-      "uid" : "c3eae452d0b6b9a2",
-      "parentUid" : "bd87080b96d9b67d4e8cf8b44fa37152",
+      "name" : "开始时间为空",
+      "uid" : "7d6929ec2ad3b068",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
       "status" : "passed",
       "time" : {
-        "start" : 1648201241300,
-        "stop" : 1648201241515,
-        "duration" : 215
+        "start" : 1652947134785,
+        "stop" : 1652947134975,
+        "duration" : 190
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "'活动名称'", "'6'", "'活动开始时间不能为空'", "''" ]
+    }, {
+      "name" : "正常创建活动",
+      "uid" : "bbd9d7cbee75d677",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1652947134984,
+        "stop" : 1652947134984,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'活动描述'", "'活动名称'", "'6'", "7", "'保存成功'", "20" ]
+    }, {
+      "name" : "活动id为空",
+      "uid" : "6d5069b92832f06f",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947134989,
+        "stop" : 1652947135180,
+        "duration" : 191
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "['缺少参数']" ]
+    }, {
+      "name" : "书籍信息为空",
+      "uid" : "ad87fed6f29bd64",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947135572,
+        "stop" : 1652947135767,
+        "duration" : 195
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "['缺少参数']" ]
+    }, {
+      "name" : "团长姓名为空",
+      "uid" : "f90984f683f78b97",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
+      "status" : "passed",
+      "time" : {
+        "start" : 1652947136070,
+        "stop" : 1652947136258,
+        "duration" : 188
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "['缺少参数']" ]
+    }, {
+      "name" : "团长姓名过长",
+      "uid" : "a4bc367deb0afa06",
+      "parentUid" : "0f822c11a635ddb029e09adaf67a3b78",
+      "status" : "failed",
+      "time" : {
+        "start" : 1652947136567,
+        "stop" : 1652947136770,
+        "duration" : 203
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'团长名称不能超过20个字符'", "'团长姓名过长团长姓名过长团长姓名过长团长姓'" ]
     } ],
-    "uid" : "test_case.test_port.test_sample"
+    "uid" : "test_case.test_port.test_activity"
   } ]
 }

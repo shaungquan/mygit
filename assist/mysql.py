@@ -1,18 +1,18 @@
 import pymysql
-from config import message
 import sys
-
-
+from config import get_setting
 class Database:
     db = ''
-
+    steeing = get_setting.get_ini("database")
     def __init__(self):
+        print(self.steeing)
         try:
-            self.db = pymysql.connect(host=message.host,
-                                      user=message.user,
-                                      password=message.password,
-                                      database=message.database)
+            self.db = pymysql.connect(host=self.steeing["host"],
+                                      user=self.steeing["user"],
+                                      password=self.steeing["password"],
+                                      database=self.steeing["database"])
             self.cursor = self.db.cursor()
+            print("数据库登录成功")
         except Exception as e:
             # 登录数据库失败则退出
             print("数据库登录失败！错误信息：", e)
@@ -68,8 +68,8 @@ class Database:
         else:
             return
 
-# name1 = "测试"
-# a = Database()
-# b = "INSERT INTO `logs` (log_name,log_time) VALUES('{}',NOW())".format(name1)
+name1 = "测试"
+a = Database()
+b = "INSERT INTO `logs` (log_name,log_time) VALUES('{}',NOW())".format(name1)
 # a.install(b)
 # a.update("UPDATE `guo_1029`.`course` SET `CId` = '01', `Cname` = '大傻子', `TId` = '02' WHERE `CId` = '01' AND `Cname` = '语文' AND `TId` = '02' LIMIT 1;")

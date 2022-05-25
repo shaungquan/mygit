@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '缺少参数' in '团长名称不能超过20个字符'",
+      "children" : [ {
+        "name" : "团长姓名过长",
+        "uid" : "a4bc367deb0afa06",
+        "parentUid" : "cb18a7ca88bb6a498de770a382838190",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652947136567,
+          "stop" : 1652947136770,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'团长名称不能超过20个字符'", "'团长姓名过长团长姓名过长团长姓名过长团长姓'" ]
+      } ],
+      "uid" : "cb18a7ca88bb6a498de770a382838190"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

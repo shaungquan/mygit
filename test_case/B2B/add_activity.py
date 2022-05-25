@@ -5,7 +5,8 @@ from config import message
 # cookie可能会变化，需要手动登录获取最新cookie
 
 # 新增活动，并通过搜索获取活动id
-from test_case import activity_rule
+
+from test_case.B2B import activity_rule
 
 
 def create_activity(activity_name, activity_type, group_switch='', recom_switch='', start_time=0.33, end_time=7, activity_content='无话可说'):

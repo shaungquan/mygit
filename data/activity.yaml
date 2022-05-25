@@ -17,3 +17,25 @@ activity_type_nonentity:
 # 活动时间为空数据
 start_time_null:
  - ["活动名称", "6", '', "活动开始时间不能为空"]
+# 成功创建活动
+activity_succeed:
+ - ["活动名称", "6", 20, 7, "活动描述", "保存成功"]
+
+# 共读活动规则
+
+# 不传书籍id
+book_null:
+ - ["缺少参数"]
+# 不填写团长姓名
+leader_name_null:
+ - ["缺少参数"]
+# 团长姓名长度过长
+leader_name_long:
+ - ["团长姓名过长团长姓名过长团长姓名过长团长姓", "团长名称不能超过20个字符"]
+# 不传活动id
+activity_id_null:
+ - ["缺少参数"]
+
+
+
+

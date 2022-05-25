@@ -1,41 +1,81 @@
 [ {
-  "uid" : "91a51b358c43094a",
-  "name" : "test_activity_name_long[不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打不敢搞打打啊啊-6-start_time0-end_time0-查询成功-活动名称不能超过30个字符]",
+  "uid" : "f90984f683f78b97",
+  "name" : "团长姓名为空",
   "time" : {
-    "start" : 1648201241070,
-    "stop" : 1648201241291,
-    "duration" : 221
+    "start" : 1652947136070,
+    "stop" : 1652947136258,
+    "duration" : 188
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fe3558e8296142c6",
-  "name" : "test_activity_name_null[-活动名称不能为空]",
+  "uid" : "1546f6fa77faada5",
+  "name" : "活动名称过长",
   "time" : {
-    "start" : 1648201240672,
-    "stop" : 1648201241063,
-    "duration" : 391
+    "start" : 1652947134577,
+    "stop" : 1652947134774,
+    "duration" : 197
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d6c5b9256b7d52ad",
-  "name" : "testdata",
+  "uid" : "6d5069b92832f06f",
+  "name" : "活动id为空",
   "time" : {
-    "start" : 1648201240663,
-    "stop" : 1648201240668,
-    "duration" : 5
+    "start" : 1652947134989,
+    "stop" : 1652947135180,
+    "duration" : 191
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c3eae452d0b6b9a2",
-  "name" : "test_time_null[活动名称-6--活动开始时间不能为空]",
+  "uid" : "1db59268a40268dc",
+  "name" : "活动名称为空",
   "time" : {
-    "start" : 1648201241300,
-    "stop" : 1648201241515,
-    "duration" : 215
+    "start" : 1652947134380,
+    "stop" : 1652947134569,
+    "duration" : 189
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4bc367deb0afa06",
+  "name" : "团长姓名过长",
+  "time" : {
+    "start" : 1652947136567,
+    "stop" : 1652947136770,
+    "duration" : 203
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad87fed6f29bd64",
+  "name" : "书籍信息为空",
+  "time" : {
+    "start" : 1652947135572,
+    "stop" : 1652947135767,
+    "duration" : 195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d6929ec2ad3b068",
+  "name" : "开始时间为空",
+  "time" : {
+    "start" : 1652947134785,
+    "stop" : 1652947134975,
+    "duration" : 190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bbd9d7cbee75d677",
+  "name" : "正常创建活动",
+  "time" : {
+    "start" : 1652947134984,
+    "stop" : 1652947134984,
+    "duration" : 0
+  },
+  "status" : "skipped",
   "severity" : "normal"
 } ]
