@@ -4,7 +4,7 @@ import yaml
 
 class YamlUtil:
     # 读取yml文件
-    def read_extract_yaml(self,key):
+    def read_extract_yaml(self, key):
         with open(os.getcwd()+"/extract.yml", mode='r', encoding='utf-8') as f:
             value = yaml.load(stream=f, Loader=yaml.FullLoader)
             return value[key]
@@ -18,3 +18,8 @@ class YamlUtil:
     def clear_excract_yaml(self):
         with open(os.getcwd() + "/extract.yml", mode='w', encoding='utf-8') as f:
             f.truncate()
+
+    def read_tesecase_yaml(self, yaml_name):
+        with open(os.getcwd() +"/testcases/"+ yaml_name, mode='r', encoding='utf-8') as f:
+            value = yaml.load(stream=f, Loader=yaml.FullLoader)
+            return value

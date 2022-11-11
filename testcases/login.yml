@@ -1,0 +1,9 @@
+-
+  name: 登录接口用例
+  request:
+    method: post
+    url:
+    data:
+      user_name: 18281740124
+      password: 123abc
+    validate: Nome

@@ -18,8 +18,8 @@ def clear_yaml():
 
 # 密码加密
 @pytest.fixture(scope="function")
-def pw_encryption():
+def pw_encryption(request):
     h1 = hashlib.md5()
-    h1.update("123abc".encode('utf-8'))
+    h1.update(request.param.encode('utf-8'))
     d1 = h1.digest()  # 返回二进制数据字符串值
     return base64.b64encode(d1).decode('utf-8')
