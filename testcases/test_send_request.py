@@ -8,7 +8,6 @@ class TestSendRequest:
     session = requests.session()
     app_key = "da6a9d132a861f28bd6e8c1b8b31f422"
     identify_key = "3a58782c204aef4cb984f8e4a1e682f9"
-
     def test_login(self, pw_encryption):
         pw = pw_encryption
         user_name = "18281740124"
@@ -25,12 +24,11 @@ class TestSendRequest:
             'X-Requested-With': 'XMLHttpRequest',
             'Content-Type': 'application/x-www-form-urlencoded'
         }
-        # 字典转字符串，禁止中文转Unicode格式
+        # 字典转字符串，禁止中文转Unicode格式11
         va = json.dumps(param, ensure_ascii=False)
         # # 去掉字符串中的空格
         va1 = ''.join(va.split())
         url = "http://apis.183read.cc/open_api5/rest6.php?act=member.user.enter&param={}".format(va1)
-        print("这是url：", url)
         re = TestSendRequest.session.request("post", url=url, headers=headers)
         YamlUtil().write_excract_yaml({"token": re.json()["result"]["member_info"]["token"]})
         print(re.json())
