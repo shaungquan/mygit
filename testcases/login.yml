@@ -1,9 +1,20 @@
 -
-  name: 登录接口用例
+  name: 登录测试
   request:
     method: post
-    url:
+    url: www.baidu.com
+    data:
+      user_name: 18281740124
+      password: 123456789abc
+  validata: None
+
+-
+  name: 登录测试242
+  request:
+    method: post
+    url: www.baidu.com
     data:
       user_name: 18281740124
       password: 123abc
-    validate: Nome
+  validata: 密码错误
+
